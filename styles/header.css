@@ -1,0 +1,305 @@
+.header{
+height: 73px;
+display: flex;
+flex-direction: row;
+position: fixed;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color:rgb(228, 228, 228) ;
+top: 0px;
+left: 0px;
+right: 0px;
+background-color:white ;
+z-index: 200;
+
+
+}
+
+.left-section{  
+    display: flex;
+    align-items: center;
+   
+}
+.hamburgerlogo{ 
+height: 34px;
+margin-left: 24px;
+margin-right: 24px;
+cursor: pointer;
+}
+.ytlogo{
+    height: 30px;
+    cursor: pointer;
+    
+
+}
+.sup{
+    margin-bottom: 21px;
+    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.middle-section{
+    
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.searchbox{
+    flex: 1;
+    height: 39px;
+    max-width: 500px;
+    padding-left:10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(192,192,192);
+    font-size:18px;
+    border-radius: 19.5px;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+    margin-left: 60px;
+    cursor: pointer;
+    width: 0px;
+    
+}
+.searchbox::placeholder{
+    font-family: roboto,Arial;
+    padding-left:1px;
+    
+    
+}
+.searchbutton{
+    height: 42px;
+    width: 60px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(192,192,192);
+    border-radius: 3px;
+    margin-left:-16px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+.voicebutton{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245,245,245);
+    cursor: pointer;
+    position: relative;
+
+}
+.search-icon{
+    height: 25px;
+    
+    cursor: pointer;
+    
+
+
+    
+
+}
+.voiceseacrh-icon{
+    height: 25px;
+   
+    cursor: pointer;
+    
+}
+
+
+
+.right-section{
+   display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: right;
+    flex-shrink: 0;
+}
+.uploadicon{
+    height: 30px;
+    width: 40px;
+    margin-right: 12px;
+    cursor: pointer;
+
+}
+.notificationicon{
+    height: 30px;
+    width: 40px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.propicicon{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    object-fit:cover;
+    margin-right: 28px;
+    cursor: pointer;
+}
+.secheader{
+    display: flex;
+    top: 73px;
+    right: 0px;
+    left: 80px;
+    justify-content: space-between;
+    background-color:white ;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    flex-direction: row;
+    flex: 1;
+   
+    
+
+}
+
+.scroller{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    border-width: 1px;
+    font-family: Roboto,Arial;
+    font-weight: 700;
+    border-color: rgb(206, 204, 204);
+    transition:background-color 0.35s;
+    border: none;
+    margin-left: 30px;
+    white-space: nowrap;
+    margin-right:-15px;
+    flex: 1;
+    
+    
+}
+.scroller:hover{
+    background-color: rgba(164, 164, 164, 0.05);
+}
+
+
+
+
+
+.not-container{
+    position: relative;
+
+}
+.not-count{
+    position:absolute;
+    top: 0px;
+    right: 12px;
+    background-color: rgb(151, 0, 0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20px;
+
+}
+.searchbutton .tooltip{
+position:absolute;
+background-color: gray;
+color: white;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 8px;
+padding-right: 8px;
+border-radius: 3px;
+font-size: 12px;
+bottom: -30px;
+opacity: 0;
+pointer-events: none;
+
+}
+.searchbutton:hover .tooltip{
+    opacity: 1;
+}
+.voicebutton .tooltip{
+    position:absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -10px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    bottom: -30px;
+   
+    }
+    .voicebutton:hover .tooltip{
+        opacity: 1;
+    }
+    .searchbutton,
+     .voicebutton,
+     .upload-container {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .upload-container{
+        position:relative;
+
+    }
+    .upload-container .tooltip{
+        position:absolute;
+        background-color: gray;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -10px;
+        opacity: 0;
+        pointer-events: none;
+        white-space: nowrap;
+        bottom: -30px;
+        font-family:Roboto,Arial;
+        
+
+    }
+    .upload-container:hover .tooltip{
+        opacity: 1;
+        
+    }
+
+    .not-container{
+        position: relative;
+    }
+    .not-container .tooltip{
+        position:absolute;
+        background-color: gray;
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        font-size: 12px;
+        bottom: -10px;
+        opacity: 0;
+        pointer-events: none;
+        white-space: nowrap;
+        bottom: -30px;
+        font-family:Roboto,Arial;
+
+    }
+    .not-container:hover .tooltip{
+        opacity: 1;
+    }
